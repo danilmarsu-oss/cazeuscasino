@@ -602,3 +602,21 @@
         font-size: 0.7rem;
     }
 }
+/* Додайте цей код до вашого CSS */
+
+@keyframes pulse-scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05); /* Збільшуємо на 5% */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hero-cta {
+    /* 2s = тривалість одного "удару", infinite = нескінченно */
+    animation: pulse-scale 2s infinite ease-in-out;
+}
